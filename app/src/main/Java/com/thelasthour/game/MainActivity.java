@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
             game.setLayerType(View.LAYER_TYPE_HARDWARE, null);
 
             setContentView(game);
-            game.loadUrl("file:///android_asset/index.html");
+            game.loadData("<html><body style='background:black;color:white;text-align:center;'><h1>THE LAST HOUR</h1><p>WebView is working!</p></body></html>", "text/html", "UTF-8");
 
         } catch (Exception e) {
             e.printStackTrace();
